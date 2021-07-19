@@ -35,4 +35,5 @@ build/
 .floo*
 
 derby.log
+/secdemo_db/
 
