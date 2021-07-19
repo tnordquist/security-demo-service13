@@ -1,0 +1,24 @@
+spring:
+  datasource:
+    url: jdbc:derby:secdemo_db;create=true;collation=TERRITORY_BASED:PRIMARY
+  jpa:
+    hibernate:
+      ddl-auto: update
+  security:
+    oauth2:
+      resourceserver:
+        jwt:
+          issuer-uri: https://accounts.google.com
+          client-id: 219714057901-l8osj7njjm0bemjjqoa34tk7oflojjt1.apps.googleusercontent.com
+#    properties:
+#      javax:
+#        persistence:
+#          schema-generation:
+#            create-source: metadata
+#            scripts:
+#              action: create
+#              create-target: ddl.sql
+server:
+  port: 18081
+  servlet:
+    context-path: /secdemo
