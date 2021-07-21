@@ -33,3 +33,7 @@ build/
 .vscode/
 
 .floo*
+
+derby.log
+/secdemo_db/
+
